@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ipas Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+  <section id="calculatorForm">
+  <h1>IPAS TAX CALCULATOR</h1>
+  <div class="row">
+
+    <div class="mb-3 col-lg-6" >
+    <label for="income" class="form-label"><h6>Gross Pay</h6></label>
+    <input type="number" class="form-control" id="grossPay" placeholder="Type in Gross Pay">
+  </div>
+
+  <div>
+    <input type="checkbox" id="nhf" name="nhfcheckbox" class = "cbox">
+    <label for="nhfcheck">NHF</label>
+  </div>
+
+    <div class="mb-3 col-lg-6" id = "nhfForm">
+    <label for="income" class="form-label"><h6>Basic Salary</h6></label>
+    <input type="number" class="form-control basicSal" id="basicSalary" placeholder="Type in your Basic Salary" value="0">
+  </div>
+
+
+
+  <div>
+    <input type="checkbox" id="allowance" name="allowanceCheckbox" class = "cbox">
+    <label for="allowance">Allowance</label>
+  </div>
+
+<div class="mb-3 col-lg-6" id = "allowanceForm" >
+  <label for="income" class="form-label"><h6>Additional Allowance</h6></label>
+  <input type="number" class="form-control" id="allowances" placeholder="Type in your additional allowance" value="0">
+</div>
+
+
+<!-- pension -->
+<div>
+  <input type="checkbox" id="pension" name="pensionCheckbox" class = "cbox">
+  <label for="pension">Pension</label>
+</div>
+
+<div id = "pensionControlled">
+
+<div class="mb-3 col-lg-6" id = "basic" >
+  <label for="basic" class="form-label"><h6>Basic Salary</h6></label>
+  <input type="number" class="form-control basicSal" id="basics" placeholder="Type in your Basic Salary" value="0">
+</div>
+
+<div class="mb-3 col-lg-6" id = "housing" >
+  <label for="housing" class="form-label"><h6>Housing</h6></label>
+  <input type="number" class="form-control" id="housings" placeholder="Type in your Housing Allowance" value="0">
+</div>
+
+<div class="mb-3 col-lg-6" id = "transport" >
+  <label for="transport" class="form-label"><h6>Transport</h6></label>
+  <input type="number" class="form-control" id="transports" placeholder="Type in your Transport Allowance" value="0">
+</div>
+
+</div>
+
+
+
+
+<button type="submit" class="btn btn-outline-primary btn-lg" id ="calcTax">Calculate Tax</button>
+</div>
+
+
+  </section>
+
+  <section id ="results">
+  <br><br><br>
+
+<div>
+<h3 id= "resultDisplay">   </h3>
+</div>
+
+<div class="mb-3 col-lg-6">
+<button type="button" class="btn btn-success" id ="fullReport">Get Full Report</button>
+<button type="reset" class="btn btn-outline-primary btn" id ="reCalcTax">Calculate Tax</button>
+</div>
+
+  </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="calculator.js" charset="utf-8"></script>
+  </body>
+</html>

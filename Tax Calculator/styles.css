@@ -1,0 +1,87 @@
+h1{
+  padding-top: 4rem;
+  color: white;
+  text-align: center;
+  padding-bottom: 3rem;
+  letter-spacing: 5px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 7rem;
+}
+
+
+.container-fluid{
+  margin: 1% 10%;
+
+}
+
+.mb-3{
+
+}
+
+.row{
+  padding: 1rem 3rem 2rem 3rem;
+}
+
+
+.form-label {
+  padding-left: 0.4rem;
+}
+
+section{
+   margin: 0;
+   padding: 0;
+
+   width: 100%;
+   height: 100vh;
+   color: #fff;
+   /* background: linear-gradient(-45deg, #ffd89b, #19547b, #23A6D5, #23D5AB); */
+   background: linear-gradient(-45deg, #000000, #150050, #3F0071, #610094);
+   background-size: 400% 400%;
+   position: relative;
+   animation: change 10s ease-in-out infinite;
+}
+
+#calcTax {
+  margin-top: 4.5rem;
+}
+
+#nhfForm {
+  display: none;
+}
+
+#allowanceForm{
+  display: none;
+}
+
+#pensionControlled{
+  display: none;
+}
+
+#results{
+  display: none;
+  padding-left: 3rem;
+}
+
+input[type=checkbox]:checked + label{
+  display: none;
+}
+
+
+
+@keyframes  change {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
